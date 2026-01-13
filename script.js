@@ -48,18 +48,44 @@
 
 // wait(1000).then(() => console.log("Done"));
 
-let number = Math.floor(Math.random() * 5) + 1;
-let guess = prompt("Guess a number between 1 and 5");
+// let number = Math.floor(Math.random() * 5) + 1;
+// let guess = prompt("Guess a number between 1 and 5");
 
-if (guess == number) {
-  alert(" You win!");
-} else {
-  alert(" You lose! The number was " + number);
+// if (guess == number) {
+//   alert(" You win!");
+// } else {
+//   alert(" You lose! The number was " + number);
+// }
+// import { add, multiply } from 'mathjs';
+
+// console.log(add(5, 7));        // 12
+// console.log(multiply(4, 6));   // 24
+// Simple to-do list logic
+
+const todos = [];
+
+function addTodo(text) {
+  todos.push(text);
+  showTodos();
 }
-import { add, multiply } from 'mathjs';
 
-console.log(add(5, 7));        // 12
-console.log(multiply(4, 6));   // 24
+function removeTodo(index) {
+  todos.splice(index, 1);
+  showTodos();
+}
+
+function showTodos() {
+  console.clear();
+  todos.forEach((todo, i) => {
+    console.log(`${i + 1}. ${todo}`);
+  });
+}
+
+// Example usage
+addTodo("Learn JavaScript");
+addTodo("Practice coding");
+removeTodo(0);
+
 
 
 
