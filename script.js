@@ -86,28 +86,43 @@
 // addTodo("Practice coding");
 // removeTodo(0);
 
-function getNumber() {
-  return new Promise((resolve, reject) => {
-    const success = true;
+// function getNumber() {
+//   return new Promise((resolve, reject) => {
+//     const success = true;
 
-    if (success) {
-      resolve(42);
-    } else {
-      reject("Something went wrong");
-    }
-  });
+//     if (success) {
+//       resolve(42);
+//     } else {
+//       reject("Something went wrong");
+//     }
+//   });
+// }
+
+// async function showNumber() {
+//   try {
+//     const num = await getNumber();
+//     console.log("Number:", num);
+//   } catch (error) {
+//     console.error("Error:", error);
+//   }
+// }
+
+// showNumber();
+
+
+// Maghe Sankranti Greeting Script
+
+function magheSankrantiWish(name) {
+  const message = ` Happy Maghe Sankranti, ${name}! 
+May this festival bring health, happiness, and prosperity to your life.`;
+  
+  alert(message);
 }
+magheSankrantiWish("Friend");
 
-async function showNumber() {
-  try {
-    const num = await getNumber();
-    console.log("Number:", num);
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}
+console.log(" Happy Maghe Sankranti!  May your life be filled with warmth and happiness.");
 
-showNumber();
+
 
 
 
