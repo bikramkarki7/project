@@ -122,17 +122,24 @@
 
 // console.log(" Happy Maghe Sankranti!  May your life be filled with warmth and happiness.");
 // College information
-const collegeName = "Ncit";
-const location = "Kathmandu";
-const totalStudents = 2000;
+// const collegeName = "Ncit";
+// const location = "Kathmandu";
+// const totalStudents = 2000;
 
-function showCollegeDetails() {
-  console.log("College Name:", collegeName);
-  console.log("Location:", location);
-  console.log("Total Students:", totalStudents);
+// function showCollegeDetails() {
+//   console.log("College Name:", collegeName);
+//   console.log("Location:", location);
+//   console.log("Total Students:", totalStudents);
+// }
+
+// showCollegeDetails();
+// app.js
+function greet(name) {
+  return `Hello, ${name}!`;
 }
 
-showCollegeDetails();
+console.log(greet("World"));
+
 
 
 
