@@ -184,9 +184,16 @@ const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
 // const userInput = "<script>alert('Hacked!')</script>";
 // console.log(sanitize(userInput));
 
-// goingHome.js
+//goinghome
 const currentTime = new Date().getHours();
 console.log(currentTime >= 18 ? "It's time to go home!" : "Not yet, keep working!");
+// homecoming
+document.addEventListener('DOMContentLoaded', function() {
+  const welcomeMessage = document.createElement('h1');
+  welcomeMessage.textContent = 'Welcome Home!';
+  document.body.appendChild(welcomeMessage);
+});
+
 
 
 
