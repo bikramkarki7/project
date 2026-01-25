@@ -142,7 +142,7 @@
 
 //dsap
 // Factorial
-const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
+// const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
 
 // Fibonacci (nth term)
 // const fibonacci = n => (n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2));
@@ -185,14 +185,16 @@ const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
 // console.log(sanitize(userInput));
 
 //goinghome
-const currentTime = new Date().getHours();
-console.log(currentTime >= 18 ? "It's time to go home!" : "Not yet, keep working!");
-// homecoming
-document.addEventListener('DOMContentLoaded', function() {
-  const welcomeMessage = document.createElement('h1');
-  welcomeMessage.textContent = 'Welcome Home!';
-  document.body.appendChild(welcomeMessage);
-});
+// const current
+// Fuzzy fan speed
+const fan = t => {
+  const cold = Math.max(0, (20 - t) / 10);
+  const hot  = Math.max(0, (t - 20) / 10);
+  return Math.round((cold * 20 + hot * 80) / (cold + hot));
+};
+
+console.log(fan(18));
+
 
 
 
